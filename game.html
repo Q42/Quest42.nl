@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  <title>Quest42 - So You Want To Be A Nerd (Q42 relatiegeschenken 2010)</title>
+  <meta name="viewport" content="width=device-width; initial-scale=0.75; maximum-scale=0.75; user-scalable=0;" />
+  <meta name="apple-touch-fullscreen" content="YES" />
+	<link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="play.css" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Cousine&amp;subset=latin' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata&amp;subset=latin' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="/quest42.css" />
+  <link rel="stylesheet" type="text/css" href="http://q42.nl/w00tcamp/w00tcamp-footer.css"></link>
+  <script type="text/javascript" src="interpreter/Multiplayer.js"></script>
+  <script type="text/javascript" src="interpreter/MultiplayerClient.js"></script>
+  <script type="text/javascript" src="interpreter/hacks.js"></script>
+  <script type="text/javascript" src="interpreter/io.js"></script>
+  <script type="text/javascript" src="interpreter/test.js"></script>
+  <script type="text/javascript" src="interpreter/sarien.js"></script>
+  <script type="text/javascript" src="interpreter/menu.js"></script>
+  <script type="text/javascript" src="interpreter/picture.js"></script>
+  <script type="text/javascript" src="interpreter/sound.js"></script>
+  <script type="text/javascript" src="interpreter/commands.js"></script>
+  <script type="text/javascript" src="interpreter/text.js"></script>
+  <script type="text/javascript" src="interpreter/agi.js"></script>
+  <script type="text/javascript" src="interpreter/agent.js"></script>
+  <script type="text/javascript" src="interpreter/utils.js"></script>
+  <script type="text/javascript" src="interpreter/view.js"></script>
+  <script type="text/javascript" src="interpreter/canvas.js"></script>
+  <script type="text/javascript" src="interpreter/reservedwords.js"></script>
+  <script type="text/javascript" src="interpreter/base64.js"></script>
+  <script type="text/javascript" src="interpreter/state.js"></script>
+  <script type="text/javascript">
+    function openGiftLightbox() {
+      var roomNr = location.hash.replace('#', '');
+      document.getElementById('lightbox').style.display = "block";
+      document.getElementById('giftbox-' + roomNr).style.display = "block";
+    }
+    function closeGiftLightbox() {
+      var roomNr = location.hash.replace('#', '');
+      document.getElementById('lightbox').style.display = "none";
+      document.getElementById('giftbox-' + roomNr).style.display = "none";
+      return false;
+    }
+  </script>
+  <script src="http://platform.twitter.com/anywhere.js?id=c0UhxsM8H4Etsrbu2Odg&amp;v=1"></script>
+  <script type="text/javascript">
+    twttr.anywhere(function (twitter) {
+      twitter.hovercards();
+    });
+  </script>
+</head>
+<body onload="Sarien.net('game')">
+  <div id="body">
+    <header>
+      <hgroup>
+        <h1><a href="/"><img src="logo.png" alt="Quest 42" style="width:610px;height:135px;" /></a></h1>
+      </hgroup>
+    </header>
+    <article>
+        
+      <div id="game">
+        <div id="edge"></div>
+        <div id="center">
+          <div id="sarien">
+          </div>
+        </div>
+      </div>
+
+      <div id="lightbox">
+      	<div id="giftbox-4" class="giftbox">
+			<form action="/gift.aspx" target="_blank" method="post">
+		      	<p>Wow! You've found a bottle of Dalwhinnie Double Matured!</p>
+				<p>Do you want this gift or do you want to keep looking for something even cooler?</p>
+				<input type="hidden" name="gift" value="whiskey" />
+				<input type="submit" value="Yes! I want this!"/>
+				<a href="#" onclick="return closeGiftLightbox();">No thanks, I think I can find something even cooler</a>
+			</form>
+      	</div>
+		<div id="giftbox-5" class="giftbox">
+			<form action="/gift.aspx" target="_blank" method="post">
+		      	<p>Awesome! You've found a Spotify Premium subscription!</p>
+				<p>Do you want this gift or do you want to keep looking for something even cooler?</p>
+				<input type="hidden" name="gift" value="spotify" />
+				<input type="submit" value="Yes! I want this!"/>
+				<a href="#" onclick="return closeGiftLightbox();">No thanks, I think I can find something even cooler</a>
+			</form>
+      	</div>
+		<div id="giftbox-1" class="giftbox">
+			<form action="/gift.aspx" target="_blank" method="post">
+		      	<p>Ganz Toll! You've found 2 CD's of organvirtuoso Klaus Wunderlich!</p>
+				<p>Do you want this gift or do you want to keep looking for something even cooler?</p>
+				<input type="hidden" name="gift" value="klaus" />
+				<input type="submit" value="Yes! I want this!"/>
+				<a href="#" onclick="return closeGiftLightbox();">No thanks, I think I can find something even cooler</a>
+			</form>
+      	</div>
+		<div id="giftbox-2" class="giftbox">
+			<form action="/gift.aspx" target="_blank" method="post">
+		      	<p>Rock 'n roll! You've found 2 bottles of 42 (Ros&eacute; Brut)!</p>
+				<p>Do you want this gift or do you want to keep looking for something even cooler?</p>
+				<input type="hidden" name="gift" value="42" />
+				<input type="submit" value="Yes! I want this!"/>
+				<a href="#" onclick="return closeGiftLightbox();">No thanks, I think I can find something even cooler</a>
+			</form>
+      	</div>
+		<div id="giftbox-3" class="giftbox">
+			<form action="/gift.aspx" target="_blank" method="post">
+		      	<p>Yes! You've found three DVD's: The Hitchhiker's Guide to the Galaxy, The Meaning of Life and Spaceballs!</p>
+				<p>Do you want this gift or do you want to keep looking for something even cooler?</p>
+				<input type="hidden" name="gift" value="movies" />
+				<input type="submit" value="Yes! I want this!"/>
+				<a href="#" onclick="return closeGiftLightbox();">No thanks, I think I can find something even cooler</a>
+			</form>
+      	</div>
+		<div id="giftbox-6" class="giftbox">
+			<form action="/gift.aspx" target="_blank" method="post">
+		      	<p>W00t! You've found the sixth book of the Hitchhiker's Guide to the Galaxy trilogy: "And Another Thing..."!</p>
+				<p>Do you want this gift or do you want to keep looking for something even cooler?</p>
+				<input type="hidden" name="gift" value="book" />
+				<input type="submit" value="Yes! I want this!"/>
+				<a href="#" onclick="return closeGiftLightbox();">No thanks, I think I can find something even cooler</a>
+			</form>
+      	</div>
+      </div>
+
+      <footer>	
+        <p>Use arrow keys to move around and type to enter commands (e.g. "look").</p>
+	      <p>To open a gift, stand near it and type "open gift".</p>
+	      <p>You can do a lot more, if you want to!</p>
+      </footer>
+        
+    </article>
+  </div>
+  <footer>
+    <p>Quest 42 was made by:<br />@rahul, @chriswaalberg, @neetoch, @timmeh__, @timmiekun, @sayne_, @stefbrooijmans and @kuvos at @q42</p>
+    <p>
+      Quest 42 is an 80's Sierra-style adventure game set in the <a href="http://q42.nl">Q42</a> offices.<br/>
+      It was built with the open source <a href="http://sarien.net">Sarien.net</a> <a href="http://code.google.com/p/sariendotnet/">engine</a>.
+    </p>
+    <p>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://quest42.nl" data-text="Quest42: op speelse wijze m'n kerstcadeau van @q42 uitkiezen" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fquest42.nl&amp;layout=button_count&amp;show_faces=true&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+    </p>
+  </footer>
+  <audio src="/quest42.mp3" autoplay="autoplay" loop="loop" preload="auto"/>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2714808-12']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>
